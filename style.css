@@ -104,8 +104,13 @@ ul {
   color: #292929;
 }
 
+.categories{
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
 .categories__title {
-  margin: 120 0 64px 0;
+  margin: 0;
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -159,4 +164,22 @@ ul {
 
 .recommended{
   margin: 0 0 120px 0;
+}
+
+.category{
+  margin: 64px 0 0 0;
+}
+
+.category__photos{
+  display: flex;
+  gap:24px;
+  margin: 0 0 16px 0;
+}
+
+.category__title{
+  margin: 0;
+  font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%;
 }
