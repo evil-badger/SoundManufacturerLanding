@@ -1,38 +1,74 @@
+<!-- #region head -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <title>Get More Sound</title>
 </head>
-<body>
-    <header>
-        <h1>
-            The world shades.
-            <br>
-            Your music shines.
-        </h1>
+<!-- #endregion -->
+
+<body id="home">
+    <header class="header">
+        <div class="header__top">
+            <img src="/images/logo.png" alt="Bose logo">
+            <a href="#menu">
+
+                <img src="/images/icons/iconBurgerMenu.svg" alt="iconBurgerMenu">
+            </a>
+
+        </div>
+
+        <div class="header__bottom">
+            <img src="/images/soundWaves.svg" alt="soundWaves">
+            <h1>
+                The world shades.
+                <br>
+                Your music shines.
+            </h1>
+        </div>
+
     </header>
-    
+
+    <div class="menu" id="menu">
+        <div class="menu__top">
+            <img src="/images/logo.png" alt="Bose logo">
+            <a href="#home"><img src="/images/icons/iconClose.svg" alt="iconClose"></a>
+        </div>
+        <nav class="nav">
+            <a href="#home" class="nav__link">Home</a>
+            <a href="#recommended" class="nav__link">recommended</a>
+            <a href="#categories" class="nav__link">Categories</a>
+            <a href="#howToBuy" class="nav__link">How to buy</a>
+        </nav>
+    </div>
+
     <main>
-        <section>
-            <h2>Recommended</h2>
+        <section id="recommended">
+            <h2 class="recommended__title">Recommended</h2>
         </section>
-        <section>
+
+        <section id="categories">
             <h2>
-                Browse Bose 
+                Browse Bose
                 <br>
                 products by category
             </h2>
+         
         </section>
-        <section>
+        <section id="howToBuy">
+
             <h2>
                 Why buy direct
                 <br>
                 from Bose
             </h2>
+  
         </section>
 
     </main>
@@ -41,4 +77,5 @@
     </footer>
     <script src="/logic.js"></script>
 </body>
+
 </html>
