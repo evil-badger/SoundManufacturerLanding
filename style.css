@@ -19,7 +19,7 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  height: 100vh;
+  height: 720px;
   padding: 64px 120px;
   background-image: url(images/headphonesImage.png);
   background-position: center;
@@ -40,7 +40,6 @@ ul {
   line-height: 100%;
   letter-spacing: -1.5px;
 }
-
 /* #endregion */
 
 /* #region menu */
@@ -58,7 +57,6 @@ ul {
   box-sizing: border-box;
   height: 100vh;
   padding: 64px 120px;
-
 }
 
 .menu:target {
@@ -105,7 +103,7 @@ ul {
   color: #292929;
 }
 
-.categories{
+.categories {
   max-width: 1020px;
   margin: 0 auto 120px auto;
 }
@@ -131,7 +129,7 @@ ul {
 
 .recommended__products {
   display: flex;
-  gap:24px;
+  gap: 24px;
   justify-content: center;
 }
 
@@ -159,74 +157,208 @@ ul {
   margin: 0;
 }
 
-.product__photo{
+.product__photo {
   width: 100%;
-  margin: 0 0 32px 0 ;
+  margin: 0 0 32px 0;
 }
 
-.recommended{
+.recommended {
   margin: 0 0 120px 0;
 }
 
-.category{
+.category {
   margin: 64px 0 0 0;
 }
 
-.category__photos{
+.category__photos {
   display: flex;
-  gap:24px;
+  gap: 24px;
   margin: 0 0 16px 0;
 }
 
-.category__title{
+.category__title {
   margin: 0;
   font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 140%;
-flex-basis: 50%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  flex-basis: 50%;
 }
 
-
-.howToBuy__description{
+.howToBuy__description {
   margin: 40px 0 0 0;
   font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 27px;
-max-width: 497px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 497px;
 }
 
-
-.howToBuy{
+.howToBuy {
   display: flex;
-  gap:130px;
+  gap: 130px;
   max-width: 1020px;
   margin: 0 auto;
 }
 
-.howToBuy__content{
+.howToBuy__content {
   flex-basis: 50%;
 }
 
-.howToBuy__benefits{
+.howToBuy__benefits {
   display: flex;
   flex-direction: column;
-  gap:16px;
+  gap: 16px;
   list-style: none;
   padding: 0;
   margin: 0;
   font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 140%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
 }
 
-.footer{
+.footer {
   background-image: url(images/categories/Rectangle\ 27.png);
   height: 460px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+.logo {
+  height: 24px;
+}
+
+.photo-wide {
+  width: 65%;
+}
+
+.photo-square {
+  width: 32%;
+}
+
+@media(max-width:1024px) {
+
+  .header {
+    padding: 64px 72px 40px 72px;
+    background-image: url(images/headphonesImageSmall.png);
+    height: 800px;
+  }
+
+  .main {
+    padding: 120px 72px;
+  }
+
+  .menu {
+    padding: 64px 72px;
+  }
+
+  
+
+  .header__title{
+    font-size: 40px;
+  }
+
+  .header__bottom{
+    margin-top: 50px;
+  }
+
+  .howToBuy{
+    gap:24px;
+  }
+
+  .howToBuy__content{
+    flex-basis: 48%;
+  }
+  .recommended__products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    height: 400px;
+  }
+
+  .howToBuy__title{
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width:576px) {
+  .header {
+    background-position: 0 0;
+    background-image: url(images/headphonesImageMobile.png);
+    height: 500px;
+    padding: 36px 20px;
+  }
+  .header__title {
+    font-size: 31px;
+    margin-top: 20px;
+  }
+
+  .menu {
+    padding: 32px 20px;
+  }
+
+  .menu__top {
+    margin-bottom: 36px;
+  }
+
+  .soundWavesLogo {
+    width: 32px;
+    height: 38px;
+  }
+
+  .recommended__title{
+    font-size: 32px;
+  }
+
+  .main {
+    padding: 120px 20px;
+  }
+
+  .photo-wide {
+    width: 48%;
+    object-fit: cover;
+  }
+
+  .photo-square {
+    width: 48%;
+    object-fit: cover;
+  }
+
+  .logo {
+    height: 16px;
+    margin-top: 4px;
+  }
+
+  .category{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .categories__title{
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .category__photos{
+    gap:20px;
+  }
+
+  .howToBuy {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .howToBuy__title {
+    font-size: 32px;
+  }
+
+  .footer {
+    height: 200px;
+    
+  }
 }
